@@ -1,30 +1,36 @@
 {
     "zmp": [
       {
-        "id": 1,
+        "_id": "1",
         "nom": "Réserve Marine de Monaco",
         "superficie": 200.5,
-        "coordonnees": {
-          "latitude": 43.734,
-          "longitude": 7.425
+        "location": {
+          "geo": {
+            "type": "point",
+            "coordinates": [43.734, 7.425]
+          }
         }
       },
       {
-        "id": 2,
+        "_id": "2",
         "nom": "Parc National Marin de Zamboanga",
         "superficie": 450.2,
-        "coordonnees": {
-          "latitude": 6.910,
-          "longitude": 122.080
+        "location": {
+          "geo": {
+            "type": "point",
+            "coordinates": [6.91, 122.08]
+          }
         }
       },
       {
-        "id": 3,
+        "_id": "3",
         "nom": "Grande Barrière de Corail",
         "superficie": 344400,
-        "coordonnees": {
-          "latitude": -18.287,
-          "longitude": 147.699
+        "location": {
+          "geo": {
+            "type": "point",
+            "coordinates": [-18.287, 147.699]
+          }
         }
       }
     ]
