@@ -1,0 +1,31 @@
+/* Styles pour la barre de navigation */
+.header {
+    background-color: #0056b3; /* Couleur de fond */
+    padding: 10px 20px; /* Espacement interne */
+    display: flex; /* Flexbox pour l'alignement horizontal */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer verticalement */
+    list-style: none; /* Retirer les puces des listes */
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour la profondeur */
+  }
+  
+  /* Styles pour les liens */
+  .header li {
+    margin: 0 15px; /* Espacement entre les éléments */
+  }
+  
+  .header a {
+    text-decoration: none; /* Retirer le soulignement */
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+  }
+  
+  /* Effet au survol */
+  .header a:hover {
+    color: #ffcc00; /* Changement de couleur au survol */
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+  }
+  

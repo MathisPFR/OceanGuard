@@ -14,4 +14,9 @@ private http = inject(HttpClient)
 getZmp(): Observable<Zmp[]>{
   return this.http.get<Zmp[]>(this.API);
 }
+
+postZmp(zmp: Omit<Zmp, 'id'>): Observable<Zmp> {
+  return this.http.post<Zmp>(this.API, zmp);
+}
+
 }
