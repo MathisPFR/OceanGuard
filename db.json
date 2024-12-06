@@ -1,18 +1,18 @@
 {
   "zmp": [
     {
-      "id": "2",
       "nom": "Parc National Marin de Zamboanga",
       "superficie": 450.2,
       "location": {
         "geo": {
           "type": "point",
           "coordinates": [
-            6.91,
+            30,
             122.08
           ]
         }
-      }
+      },
+      "id": "2"
     },
     {
       "id": "3",
@@ -24,48 +24,6 @@
           "coordinates": [
             -18.287,
             147.699
-          ]
-        }
-      }
-    },
-    {
-      "id": "bfa9",
-      "nom": "Bojout ",
-      "superficie": 78787,
-      "location": {
-        "geo": {
-          "type": "point",
-          "coordinates": [
-            87878,
-            7878787
-          ]
-        }
-      }
-    },
-    {
-      "id": "5b8f",
-      "nom": "HJhjhjh",
-      "superficie": 98989898.0909,
-      "location": {
-        "geo": {
-          "type": "point",
-          "coordinates": [
-            9090.0909,
-            90909.0898
-          ]
-        }
-      }
-    },
-    {
-      "id": "6406",
-      "nom": "lklk",
-      "superficie": 90909,
-      "location": {
-        "geo": {
-          "type": "point",
-          "coordinates": [
-            909,
-            909
           ]
         }
       }
