@@ -11,6 +11,8 @@
         Latitude : {{ zmp.location.geo.coordinates[0] }} <br>
         Longitude : {{ zmp.location.geo.coordinates[1] }}
       </p>
+      <button [routerLink]="['/update-zmp', zmp.id]">Modifier</button>
+      <button (click)="onDelete(zmp.id)" class="btn-delete">Supprimer</button>
     </li>
   </ul>
 </div>

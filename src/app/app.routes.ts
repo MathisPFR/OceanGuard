@@ -9,5 +9,5 @@ export const routes: Routes = [
   { path: '', component: ZmpComponent }, 
   { path: 'post-zmp', component: PostZmpComponent }, 
   { path: 'post-zmp', component: PostZmpComponent },
-  { path: 'update-zmp', component: UpdateZmpComponent }, 
+  { path: 'update-zmp/:id', component: UpdateZmpComponent }, 
 ];
