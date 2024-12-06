@@ -1,0 +1,7 @@
+#map {
+    height: 80vh; /* Ajustez la hauteur selon vos besoins */
+    width: 90%;
+    border: solid black 1px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }

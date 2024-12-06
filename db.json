@@ -7,7 +7,7 @@
         "geo": {
           "type": "point",
           "coordinates": [
-            7,
+            30,
             122.08
           ]
         }
@@ -24,34 +24,6 @@
           "coordinates": [
             -18.287,
             147.699
-          ]
-        }
-      }
-    },
-    {
-      "id": "bfa9",
-      "nom": "Bojout ",
-      "superficie": 78787,
-      "location": {
-        "geo": {
-          "type": "point",
-          "coordinates": [
-            87878,
-            7878787
-          ]
-        }
-      }
-    },
-    {
-      "id": "5b8f",
-      "nom": "HJhjhjh",
-      "superficie": 98989898.0909,
-      "location": {
-        "geo": {
-          "type": "point",
-          "coordinates": [
-            9090.0909,
-            90909.0898
           ]
         }
       }
