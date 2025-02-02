@@ -12,6 +12,10 @@
           ]
         }
       },
+      "especesId": [
+        "1",
+        "2"
+      ],
       "id": "2"
     },
     {
@@ -26,7 +30,44 @@
             147.699
           ]
         }
-      }
+      },
+      "especesId": [
+        "1",
+        "3"
+      ]
+    }
+  ],
+  "especes": [
+    {
+      "id": "1",
+      "nom": "Dugong",
+      "description": "Mammifère marin herbivore",
+      "tailleMin": 2.5,
+      "poidsMin": 230,
+      "zmpId": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "2",
+      "nom": "Tortue verte",
+      "description": "Tortue marine herbivore",
+      "tailleMin": 1.1,
+      "poidsMin": 110,
+      "zmpId": [
+        "2"
+      ]
+    },
+    {
+      "id": "3",
+      "nom": "Napoléon",
+      "description": "Poisson récifal de grande taille",
+      "tailleMin": 1.5,
+      "poidsMin": 90,
+      "zmpId": [
+        "3"
+      ]
     }
   ]
 }

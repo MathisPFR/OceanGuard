@@ -13,5 +13,6 @@ export interface Zmp {
     nom: string;
     superficie: number;
     location: Location;
+    especesId: string[];
 }
 

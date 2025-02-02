@@ -1,0 +1,27 @@
+<div>
+    <h2>Liste des Espèces Protégées</h2>
+    
+    
+
+    <div *ngFor="let espece of especeList">
+        <div class="espece-item">
+            <h3>{{ espece.nom }}</h3>
+            <p><strong>Description:</strong> {{ espece.description }}</p>
+            <p><strong>Taille minimum:</strong> {{ espece.tailleMin }} m</p>
+            <p><strong>Poids minimum:</strong> {{ espece.poidsMin }} kg</p>
+            <p><strong>Zones Marines Protégées:</strong></p>
+            <ul *ngIf="espece.zmpId && espece.zmpId.length > 0">
+                <li *ngFor="let zmpId of espece.zmpId">
+                    {{ getZmpName(zmpId) }}
+                </li>
+            </ul>
+            <p *ngIf="!espece.zmpId || espece.zmpId.length === 0">
+                Aucune ZMP associée
+            </p>
+            <div class="espece-actions">
+                <a class="btn-edit" [routerLink]="['/especes', espece.id, 'edit']">Modifier</a>
+                <button class="btn-delete" (click)="deleteEspece(espece.id)">Supprimer</button>
+            </div>
+        </div>
+    </div>
+</div>

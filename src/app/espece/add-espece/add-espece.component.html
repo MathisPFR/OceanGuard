@@ -1,0 +1,63 @@
+<div class="form-container">
+    <h2>Ajouter une nouvelle espèce</h2>
+    
+    <form (ngSubmit)="onSubmit()" #especeForm="ngForm">
+        <div class="form-group">
+            <label for="nom">Nom de l'espèce:</label>
+            <input 
+                type="text" 
+                id="nom" 
+                name="nom" 
+                [(ngModel)]="nom" 
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea 
+                id="description" 
+                name="description" 
+                [(ngModel)]="description" 
+                required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="tailleMin">Taille minimum (en mètres):</label>
+            <input 
+                type="number" 
+                id="tailleMin" 
+                name="tailleMin" 
+                [(ngModel)]="tailleMin" 
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="poidsMin">Poids minimum (en kg):</label>
+            <input 
+                type="number" 
+                id="poidsMin" 
+                name="poidsMin" 
+                [(ngModel)]="poidsMin" 
+                required>
+        </div>
+
+        <div class="form-group">
+            <label>Zones Marines Protégées:</label>
+            <div class="checkbox-group">
+                <div *ngFor="let zmp of zmpList" class="checkbox-item">
+                    <input 
+                        type="checkbox" 
+                        [id]="'zmp-' + zmp.id"
+                        [value]="zmp.id"
+                        (change)="onZmpChange(zmp.id, $event)">
+                    <label [for]="'zmp-' + zmp.id">{{ zmp.nom }}</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" [disabled]="!especeForm.form.valid">Ajouter l'espèce</button>
+            <button type="button" routerLink="/especes">Annuler</button>
+        </div>
+    </form>
+</div>

@@ -32,7 +32,8 @@ export class PostZmpComponent {
           type: 'point',
           coordinates: [parseFloat(formData.latitude), parseFloat(formData.longitude)] as [number, number] 
         }
-      }
+      },
+      especesId: []
     };
 
     this.zmpService.postZmp(newZmp).subscribe({
